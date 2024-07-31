@@ -211,11 +211,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-#    - name: Install Dependencies
-#      run: |
-#        sudo apt-get update
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
 #        sudo apt-get install -y libglfw3-dev libsdl2-dev gcc-multilib g++-multilib libfreetype6-dev libvulkan-dev
-#
+        sudo apt-get install -y libsdl2-dev
+
 #    - name: Build example_null (extra warnings, gcc 32-bit)
 #      run: |
 #        make -C examples/example_null clean
